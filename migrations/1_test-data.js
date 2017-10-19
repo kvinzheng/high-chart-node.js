@@ -1,21 +1,16 @@
 /* eslint func-names: ["error", "never"]*/
 /* eslint linebreak-style: ["error", "windows"]*/
 exports.up = function (knex) {
-  return knex.schema.createTable('test-data', (table) => {
+  return knex.schema.createTable('datas', (table) => {
     table.increments();
-    table.string('product').notNullable().defaultTo('');
-    table.string('region').notNullable().defaultTo('');
-    table.string('sector').notNullable().defaultTo('');
-    table.string('currency').notNullable().defaultTo('');
-    table.string('ticker').notNullable().defaultTo('');
-    table.string('price').notNullable().defaultTo('');
-    table.string('quantity').notNullable().defaultTo('');
-    table.string('cost').notNullable().defaultTo('');
-    table.string('nav').notNullable().defaultTo('');
-    table.string('pnl').notNullable().defaultTo('');
+    table.string('bond').notNullable().defaultTo('');
+    table.string('equities').notNullable().defaultTo('');
+    table.string('fx').notNullable().defaultTo('');
+    table.string('fxoptions').notNullable().defaultTo('');
+    table.string('swaps').notNullable().defaultTo('');
   });
 };
 
 exports.down = function (knex) {
-  return knex.schema.dropTable('users');
+  return knex.schema.dropTable('datas');
 };

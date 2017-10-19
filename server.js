@@ -11,7 +11,7 @@ const morgan = require('morgan');
 
 const app = express();
 // import routes
-
+const testData = require('./routes/test-data.js');
 
 app.disable('x-powered-by');
 
@@ -25,6 +25,7 @@ app.options('*', cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+app.use(testData);
 
 // error middleware handler
 app.use((err, _req, res, _next) => {
