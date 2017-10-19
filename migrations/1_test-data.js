@@ -1,5 +1,3 @@
-/* eslint func-names: ["error", "never"]*/
-/* eslint linebreak-style: ["error", "windows"]*/
 exports.up = function (knex) {
   return knex.schema.createTable('datas', (table) => {
     table.increments();

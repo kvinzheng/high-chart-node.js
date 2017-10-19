@@ -18,13 +18,15 @@ app.disable('x-powered-by');
 if (app.get('env') === 'development') {
   app.use(morgan('dev'));
 }
-
+//fix cors issue
 app.use(cors());
 app.options('*', cors());
 // enable request body
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
+
+//load data path
 app.use(testData);
 
 // error middleware handler
