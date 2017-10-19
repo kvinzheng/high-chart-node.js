@@ -1,0 +1,39 @@
+{
+  "name": "high-chart-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "knex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvinzheng/high-chart-node.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvinzheng/high-chart-node.js/issues"
+  },
+  "homepage": "https://github.com/kvinzheng/high-chart-node.js#readme",
+  "dependencies": {
+    "bcrypt-as-promised": "^1.1.0",
+    "body-parser": "^1.18.2",
+    "boom": "^6.0.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-validation": "^1.0.2",
+    "humps": "^2.0.1",
+    "joi": "^13.0.1",
+    "jsonwebtoken": "^8.1.0",
+    "knex": "^0.13.0",
+    "morgan": "^1.9.0",
+    "pg": "^7.3.0",
+    "query-string": "^5.0.0"
+  }
+}
