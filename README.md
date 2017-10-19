@@ -1,0 +1,1 @@
+# high-chart-node.js
